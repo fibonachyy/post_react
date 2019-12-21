@@ -1,0 +1,45 @@
+.header {
+    font-family:Fugaz;
+    color: $accent ; 
+    animation-delay: 1s;
+    min-width: 300px;
+    width: 100%;
+    max-width: $max_width;
+
+    margin: 20px auto;
+    
+    h2{
+        margin: 5px auto;
+        font-weight: 700;
+        padding-left: 15px;
+    }
+    span.title_row{
+        display: block;
+        padding-left: 70px;
+        width: 100%;
+        overflow-wrap: break-word;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        label{
+            padding-right: 10px;
+            color: $secound;
+        }
+        span{
+            position: relative;
+            top: 5px;
+            left: 5px;
+            font-size: 18px;
+        }
+        @media screen and (max-width: $small) {
+            padding-left: 0;
+          }
+    }
+    
+    @media screen and (max-width: $small) {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+      }
+      
+}
